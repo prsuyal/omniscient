@@ -1,0 +1,66 @@
+# --- OS / editor noise ---
+.DS_Store
+.idea/
+.vscode/
+
+# --- Local tooling state ---
+.claude/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Secrets / env files ---
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+!.env.example
+
+# --- Python artifacts ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.mypy_cache/
+.pytest_cache/
+
+# --- Python virtual environments ---
+.venv/
+venv/
+ML/venv/
+
+# --- Project-local generated matplotlib cache ---
+ML/.mplconfig/
+medical-future-dashboard/.mplconfig/
+
+# --- Node / Next build artifacts ---
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+**/.turbo/
+**/.vercel/
+**/*.tsbuildinfo
+
+# --- Runtime/generated app data ---
+**/uploads/
+*.db
+*.sqlite
+*.sqlite-journal
+
+# --- Large raw datasets not needed in git ---
+ML/data/
+
+# --- Keep only runtime ML artifacts needed by the app ---
+ML/outputs/**
+!ML/outputs/models/
+!ML/outputs/models/**
+!ML/outputs/stage1_biomarker_simulation_full/
+ML/outputs/stage1_biomarker_simulation_full/**
+!ML/outputs/stage1_biomarker_simulation_full/stage1_biomarker_models.joblib
+!ML/outputs/stage1_biomarker_simulation_full/stage1_validation_summary.csv
