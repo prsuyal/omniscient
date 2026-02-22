@@ -1,7 +1,7 @@
 # --- OS / editor noise ---
 .DS_Store
 .idea/
-.vscode/
+.vscode/ 
 
 # --- Local tooling state ---
 .claude/
